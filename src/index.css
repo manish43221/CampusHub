@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* 🌙 This line fixes the Dark Mode toggle for Tailwind v4! */
+@custom-variant dark (&:is(.dark *));
+
+/* This forces the app to take up the full screen */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  animation: gradientMove 6s ease infinite;
+}
